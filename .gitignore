@@ -1,0 +1,7 @@
+*.o
+GraphAlpha
+*.vim
+*.aux
+*.log
+*.out
+*.toc

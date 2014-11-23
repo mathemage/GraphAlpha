@@ -1,0 +1,59 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DFS	GraphAlpha.c	/^void DFS(graph* p_gr, int v, int* in, int* low, c_bit* visited, c_bit* stacked)$/;"	f
+Dijkstra	GraphAlpha.c	/^double* Dijkstra (int v, graph* p_gr)$/;"	f
+FloydWarshall	GraphAlpha.c	/^double** FloydWarshall(graph* p_gr) {$/;"	f
+GraphAlpha_H	GraphAlpha.h	8;"	d
+TSort	GraphAlpha.c	/^int TSort(graph* p_gr, int* seq)$/;"	f
+Tarjan	GraphAlpha.c	/^void Tarjan(graph* p_gr)$/;"	f
+arc	GraphAlpha.h	/^} arc;$/;"	t	typeref:struct:c_arc
+bit	GraphAlpha.h	/^  unsigned int bit : 1;$/;"	m	struct:__anon1
+bottom	GraphAlpha.h	/^  int bottom;                           \/* end of heap in heap_arr *\/$/;"	m	struct:c_heap
+c_arc	GraphAlpha.h	/^typedef struct c_arc {                  \/* data type of arc *\/$/;"	s
+c_bit	GraphAlpha.h	/^} c_bit;$/;"	t	typeref:struct:__anon1
+c_graph	GraphAlpha.h	/^typedef struct c_graph {                \/* data type of graph *\/$/;"	s
+c_heap	GraphAlpha.h	/^typedef struct c_heap {                 \/* data type of k-regular heap *\/$/;"	s
+c_llist_node	GraphAlpha.h	/^typedef struct c_llist_node {           \/* data type of a node of queue *\/$/;"	s
+c_node	GraphAlpha.h	/^typedef struct c_node {                 \/* data type of node *\/$/;"	s
+c_queue	GraphAlpha.h	/^typedef struct c_queue {                \/* data type of the whole queue *\/$/;"	s
+displayGraph	main.c	/^void displayGraph(graph* p_gr) {$/;"	f
+displayMenu	main.c	/^void displayMenu() {$/;"	f
+graph	GraphAlpha.h	/^} graph;$/;"	t	typeref:struct:c_graph
+head	GraphAlpha.h	/^  llist_node* head;$/;"	m	struct:c_queue
+heap	GraphAlpha.h	/^} heap;$/;"	t	typeref:struct:c_heap
+heapDecrease	GraphAlpha.c	/^void heapDecrease(heap* p_h, double* distances, int v, double value)$/;"	f
+heapExtractMin	GraphAlpha.c	/^int heapExtractMin(heap* p_h, double* distances)$/;"	f
+heapInsert	GraphAlpha.c	/^void heapInsert(heap* p_h, double* distances, int v, double value)$/;"	f
+heap_arr	GraphAlpha.h	/^  int* heap_arr;                        \/* array of the heap *\/$/;"	m	struct:c_heap
+index	GraphAlpha.h	/^	unsigned int index;									  \/* index of neighbor *\/$/;"	m	struct:c_arc
+indices	GraphAlpha.h	/^  int* indices;                         \/* array of index-mapping from vertices$/;"	m	struct:c_heap
+listConvert	GraphAlpha.c	/^graph* listConvert(double** matrix, int dim)$/;"	f
+listConvertBit	GraphAlpha.c	/^graph* listConvertBit(c_bit** matrix, int dim)$/;"	f
+llist_node	GraphAlpha.h	/^} llist_node;$/;"	t	typeref:struct:c_llist_node
+main	main.c	/^int main() {$/;"	f
+matrixConvert	GraphAlpha.c	/^double ** matrixConvert(graph* p_gr) {$/;"	f
+maxAbs	GraphAlpha.c	/^double maxAbs(double a, double b)$/;"	f
+next	GraphAlpha.h	/^  struct c_arc* next;									  \/* next neighbor of the source node *\/$/;"	m	struct:c_arc	typeref:struct:c_arc::c_arc
+next	GraphAlpha.h	/^  struct c_llist_node* next;$/;"	m	struct:c_llist_node	typeref:struct:c_llist_node::c_llist_node
+node	GraphAlpha.h	/^} node;$/;"	t	typeref:struct:c_node
+nodes	GraphAlpha.h	/^	node* nodes;												  \/* array of nodes of graph *\/$/;"	m	struct:c_graph
+order	GraphAlpha.h	/^  unsigned int order;                   \/* # of arcs *\/$/;"	m	struct:c_graph
+pop	GraphAlpha.c	/^int pop(queue* q)$/;"	f
+push	GraphAlpha.c	/^void push(int value, queue* q)$/;"	f
+queue	GraphAlpha.h	/^} queue;$/;"	t	typeref:struct:c_queue
+regularity	GraphAlpha.h	/^  unsigned int regularity;              \/* regularity of the heap *\/$/;"	m	struct:c_heap
+size	GraphAlpha.h	/^  unsigned int size;                    \/* # of nodes *\/$/;"	m	struct:c_graph
+stack	GraphAlpha.c	/^llist_node* stack = NULL;$/;"	v
+successors	GraphAlpha.h	/^	arc* successors;										  \/* linked list of successors *\/$/;"	m	struct:c_node
+swap	GraphAlpha.c	/^void swap(int* arr, int idx1, int idx2)$/;"	f
+symMtrx	GraphAlpha.c	/^double ** symMtrx (graph* p_gr)$/;"	f
+tail	GraphAlpha.h	/^  llist_node* tail;$/;"	m	struct:c_queue
+timer	GraphAlpha.c	/^int timer = 0;$/;"	v
+transitiveClosure	GraphAlpha.c	/^c_bit** transitiveClosure(graph* p_gr)$/;"	f
+transitiveReduction	GraphAlpha.c	/^c_bit** transitiveReduction(graph* p_gr)$/;"	f
+val	GraphAlpha.h	/^  unsigned int val;$/;"	m	struct:c_llist_node
+weight	GraphAlpha.h	/^	double weight;											  \/* weight of respective arc *\/$/;"	m	struct:c_arc
